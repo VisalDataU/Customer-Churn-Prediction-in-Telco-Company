@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Customer Churn</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Senior Citizen" placeholder="Senior Citizen" required="required" />
+        <input type="text" name="Partner" placeholder="Partner" required="required" />
+        <input type="text" name="Dependents" placeholder="Dependents" required="required" />
+        <input type="number" name="Tenure" placeholder="Tenure" required="required" />
+        <input type="text" name="Contract" placeholder="Contract" required="required" />
+        <input type="text" name="Paperless Billing" placeholder="Paperless Billing" required="required" />
+        <input type="text" name="Multiple Lines_No phone service" placeholder="Phone service" required="required" />
+        <input type="text" name="Multiple Lines_Yes" placeholder="Multiple Lines" required="required" />
+        <input type="text" name="Internet Service_Fiber optic" placeholder="Internet Service_Fiber optic" required="required" />
+        <input type="text" name="Online Security_Yes" placeholder="Online Security" required="required" />
+        <input type="text" name="Online Backup_Yes" placeholder="Online Backup" required="required" />
+        <input type="text" name="Device Protection_Yes" placeholder="Device Protection" required="required" />
+        <input type="text" name="Tech Support_Yes" placeholder="Tech Support" required="required" />
+        <input type="text" name="Streaming TV_Yes" placeholder="Streaming TV" required="required" />
+        <input type="text" name="Streaming Movies_No internet service" placeholder="Internet service" required="required" />
+        <input type="text" name="Streaming Movies_Yes" placeholder="Streaming Movies" required="required" />
+        <input type="text" name="Payment Method_Credit card (automatic)" placeholder="Payment Method_Credit card" required="required" />
+        <input type="text" name="Payment Method_Electronic check" placeholder="Payment Method_Electronic check" required="required" />
+        <input type="text" name="Payment Method_Mailed check" placeholder="Payment Method_Mailed check" required="required" />
+		      <input type="text" name="Gender_1" placeholder="Gender" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
