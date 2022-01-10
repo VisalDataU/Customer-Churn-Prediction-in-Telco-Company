@@ -3,4 +3,5 @@
 ## ________________________________________________________
 
 ### Project Structure
-Test
+1. Build a machine learning model
+2. Create an API for the final model
