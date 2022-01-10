@@ -4,7 +4,7 @@
 
 ### Project Structure
 1. Build a machine learning model
-  - Find 'customer_churn_ML_notebook.ipynb' and run all lines to use the notebook.
+  - Find 'customer_churn_ML_notebook.ipynb' and run all lines to use the notebook. You can find "Summary of Machine Learning Evaluation Results" to see the brief of the whole pipeline.
 2. Create an API for the final model using FLASK
 
 ### How to Use the API
