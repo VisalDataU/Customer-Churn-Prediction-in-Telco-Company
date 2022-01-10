@@ -2,5 +2,5 @@
 ## *Building a Model to Detect Churn in a Telco Company*
 ## ________________________________________________________
 
-# Project Structure
+### Project Structure
 Test
