@@ -4,6 +4,6 @@
 
 ### Project Structure
 1. Build a machine learning model
-  - asdasd
-3. Create an API for the final model using FLASK
+  - Find 'customer_churn_ML_notebook.ipynb' and run all lines to use the notebook.
+2. Create an API for the final model using FLASK
 
