@@ -8,7 +8,7 @@
 2. Create an API for the final model using FLASK
 
 ### How to Use the API
-1. GO to home directory of the project and the command:
+1. Go to home directory of the project and the command:
 ```
 python model.py
 ```
