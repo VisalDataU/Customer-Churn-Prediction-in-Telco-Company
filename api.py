@@ -41,7 +41,7 @@ def predict():
         prediction = 'not churn'
     else: prediction = 'churn'
 
-    return render_template('index.html', prediction_text='The customer would {}.'.format(prediction))
+    return render_template('index.html', prediction_text='The customer will {}.'.format(prediction))
 
     #     except:
             
