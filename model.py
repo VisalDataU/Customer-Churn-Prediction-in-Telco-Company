@@ -126,10 +126,3 @@ print("Model dumped!")
 
 # Load the model back
 lr = pickle.load(open('model.pkl','rb'))
-
-# Saving the data columns from training
-model_columns = list(X.columns)
-pickle.dump(model_columns, open('model_columns.pkl', 'wb'))
-print("Models columns dumped!")
-
-

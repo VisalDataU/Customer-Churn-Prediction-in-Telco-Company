@@ -18,8 +18,7 @@ def home():
 
 @app.route('/predict', methods=['POST'])
 def predict():
-    #if lr:
-        #try:
+
     json_ = request.form.to_dict()
     #print(json_)
     data_1 = pd.DataFrame([json_])
@@ -42,17 +41,6 @@ def predict():
     else: prediction = 'churn'
 
     return render_template('index.html', prediction_text='The customer will {}.'.format(prediction))
-
-    #     except:
-            
-    #         return jsonify({'trace': traceback.format_exc()})
-    # else:
-        
-    #     print ('Train the model first')
-        
-    #     return ('No model here to use')
-
-
     
 @app.route('/predict_api',methods=['POST'])
 def predict_api():
